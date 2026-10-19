@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <h1 style="color:white">sex allowed checker
+
+    </h1>
+    <input type="number" placeholder="enter your age" id="age">
+    <button onclick="agechecker()">check</button>
+    <h1 style="text-align: center;color:yellow;line-height: 300px;" id="p1"></h1>
+    
+
+</body>
+<script>
+
+
+    function agechecker(){ 
+        let age=Number(document.getElementById("age").value);
+
+        
+        
+        if(age>18){
+            // do something
+        
+        document.getElementById("p1").innerHTML="your allowed";
+
+    }
+else{
+    document.getElementById("p1").style.webkitTextSizeAdjust="large";
+}}
+    </script>
+
+
+</html>

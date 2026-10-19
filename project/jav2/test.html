@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="main.css">
+    <script>
+    
+            //let joel=24;
+        //document.getElementById("p1").innerText="welcome again";
+          //document.write(joel);
+          //window.alert("joel");
+          //window.print()
+
+          
+          
+          
+          
+          let x =Number(document.getElementById("x").value);
+          let y =Number(document.getElementById("y").value);
+          let sum = x + y;
+          let sub=x-y;
+          let  div=x/y;
+          let prod=x * y;
+
+        function changeContent(){
+          let x =Number(document.getElementById("x").value);
+          let y =Number(document.getElementById("y").value);
+
+
+
+          let sum = x + y;
+
+
+        document.getElementById("p1").innerHTML= sum ;
+         
+}
+function changeContenta(){
+          let x =Number(document.getElementById("x").value);
+          let y =Number(document.getElementById("y").value);
+
+
+    
+        let  prod= x*y;
+        document.getElementById("p1").innerHTML= prod;}
+
+         
+         
+        function changeContentb(){
+          let x =Number(document.getElementById("x").value);
+          let y =Number(document.getElementById("y").value);
+          let div= x/y;
+
+
+         document.getElementById("p3").innerHTML=div;}
+
+        function changeContentc(){
+          let x =Number(document.getElementById("x").value);
+          let y =Number(document.getElementById("y").value);
+         let sub = x-y;
+
+
+
+         document.getElementById("p4").innerHTML=sub;
+        }
+      </script>
+
+</head>
+
+<body id="bg"> <div class="d1">
+
+    <div class="pd"> <h1 id="p1">calculator</h1> </div>
+    <h1 id="p2"></h1>
+    <h1 id="p3"></h1>
+<h1 id="p4"></h1>
+    <input id="x" type="number" placeholder="enter fist number">
+    <br> <br>
+    <input id="y" type="number" placeholder="enter second number">
+    <br>
+    <br>
+    <button type="button" onclick="changeContent()"> +</button> 
+    <br>
+     <br>
+    <button type="button" onclick="changeContenta()"> x</button> 
+    <br>
+    <br>      
+    <button type="button" onclick="changeContentb()"> /</button> <br> <br>
+    <button type="button" onclick="changeContentc()"> -</button> 
+    <input type="button" value="2">
+    </div>
+    </body>
+</html>

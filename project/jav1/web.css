@@ -1,0 +1,31 @@
+.main{
+background-image: url(b.png);
+height: fit-content;}
+
+.div1{
+    
+    color: blue;
+
+text-decoration-color: blue;
+size: medium;
+text-align: center;
+line-height: 200px;
+font-style: italic;
+
+}
+.ide{background-color: aqua;
+    height: 150px;
+    width: 200px;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+.ida{align-items: center;
+    text-align: center;
+line-height: 40px;}
+#result{color: yellow;
+text-align: center;
+line-height: 300px;
+text}
+body{background-image: url(b.png);}

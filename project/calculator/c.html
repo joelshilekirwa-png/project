@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        #but{background-color:dimgray;
+        width: 100%;
+    background-position: center;
+        background-size: cover;
+        
+    }
+        #dis{width: 95%;
+        height: 200px;
+        -webkit-text-stroke-width: bold;
+    margin-left: 20px;
+margin-right: 50px;
+background-color: yellow;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: ;}
+        .l{width: 320px;
+            height: 50px; 
+            gap: 100px;
+            padding-right: 50px;
+            background-color: white;
+            padding: 10px;
+            white-space: 50px;
+            margin: 1.5px;
+        size: 50px;}
+        .k{width: 250px;
+            display: inline;
+       background-color: blue;
+       color:white;
+       size: large;
+       height: 50px;
+        }
+        #di{background-color: red;
+            color: white;
+            text-size-adjust: 70px;
+            width: 320px;
+            height: 50px;
+
+        }
+        #re{background-color: darkgreen;
+
+        color: white;
+        height: 50px;
+    width: 250px;}
+    
+    #kuu{background-color: dimgray;
+    display:block;}
+    .po{margin-bottom: 20px;}
+    </style>
+</head>
+<body>
+    <div id="kuu">
+        <h2>casio </h2>
+    <h1><input type="text" id="dis"></h1>
+    <br bgcolor="aqua">
+    
+    <br>
+    <div id="but">
+    <button class="l" onclick="Numbe('1')" >1</button>
+    <button class="l" onclick="Numbe('2')" >2</button>
+    <button class="l" onclick="Numbe('3')" >3</button>
+    <button class="k" onclick="Numbe('+')" >+</button>
+    <br>
+    <br>
+    <button class="l" onclick="Numbe('4')" >4</button>
+    <button class="l" onclick="Numbe('5')" >5</button>
+    <button class="l" onclick="Numbe('6')" >6</button>
+    <button class="k" onclick="Numbe('-')" >-</button>
+    <br>
+    <br>
+    <button class="l" onclick="Numbe('7')" >7</button>
+    <button class="l" onclick="Numbe('8')" >8</button>
+    <button class="l" onclick="Numbe('9')" >9</button>
+    <button class="k" onclick="Numbe('*')" >x </button>
+    <br>
+    <br>
+    <div class="po">
+    <button id="di" onclick="futa('del')" >clr</button>
+    <button class="l" onclick="Numbe('0')" >0</button> 
+    <button style="background-color: blue; color: white;" class="l" onclick="Numbe('/')" >/</button>
+    <button id="re" onclick="resu('=')" >=</button>
+    </div>
+    </div>
+    </div>
+    <script>
+        const display=document.getElementById('dis')
+        ;
+        a
+        function Numbe(val){display.value +=val;}
+        function futa(){display.value= " " ;}
+        function resu(){try{display.value= eval(display.value);}
+    catch (e){display.value = 'val';}}
+
+    </script>
+    
+</body>
+</html>
